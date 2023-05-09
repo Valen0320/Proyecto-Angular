@@ -6,6 +6,14 @@ export const ROUTES: RouteInfo[] = [
     path: '/page', title: 'Page', icon: 'ft-home', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
   },
   {
+    path: '/exercises/users', title: 'Users', icon: 'ft-home', class: 'has-sub', badge: '1', badgeClass: 'badge badge-pill badge-danger float-right mr-1 mt-1', isExternalLink: false, 
+    submenu: [
+      {
+        path: '/exercises/create-user', title: 'Create Users', icon: 'ft-home', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+      }
+    ]
+  },
+  {
     path: '/exercises/calculator', title: 'Calculator', icon: 'ft-smartphone', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
   },
   {
@@ -16,6 +24,12 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: '/exercises/editor', title: 'Editor', icon: 'ft-upload', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+  },
+  {
+    path: '/exercises/organigrama', title: 'Organigrama', icon: 'ft-grid', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+  },
+  {
+    path: '/exercises/chart', title: 'Chart', icon: 'ft-grid', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
   },
   {
     path: '', title: 'Menu Levels', icon: 'ft-align-left', class: 'has-sub', badge: '3', badgeClass: 'badge badge-pill badge-danger float-right mr-1 mt-1', isExternalLink: false,

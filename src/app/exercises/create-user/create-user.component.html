@@ -1,0 +1,25 @@
+<a id="exercises/users">
+    <button class="my-btn" onclick="location.href='exercises/users'">Lista de Usuarios</button>
+</a>
+
+<div class="form-container">
+    <h2>Crear nuevo usuario</h2>
+    <form method="POST">
+      <div class="form-group">
+        <i class="fa fa-user"></i>
+        <label for="nombre">&nbsp; Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <i class="fa fa-user"></i>
+        <label for="rol">&nbsp; Rol:</label>
+        <input type="text" id="rol" name="rol" placeholder="Ej: Administrador" required>
+      </div>
+      <div class="form-group">
+        <i class="fa fa-envelope"></i>
+        <label for="correo">&nbsp; Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="Ej: guest@apex.com" required>
+      </div>
+      <button (click)="crear()" type="submit">Crear usuario</button>
+    </form>
+  </div>

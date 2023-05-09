@@ -11,6 +11,13 @@ import { EditorComponent } from './editor/editor.component';
 import { GalleryPageComponent } from './gallery/gallery.component'; 
 import { DataTablesComponent } from './data-tables/data-tables.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { OrganigramaComponent } from './organigrama/organigrama.component';
+import { ChartComponent } from './chart/chart.component';
+import {OrganizationChartModule} from 'primeng/organizationchart';
+import {ToastModule} from 'primeng/toast';
+import {PanelModule} from 'primeng/panel';
+import { UsersComponent } from './users/users.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 
 @NgModule({
@@ -19,6 +26,10 @@ import { CalculatorComponent } from './calculator/calculator.component';
     GalleryPageComponent,
     DataTablesComponent,
     EditorComponent,
+    OrganigramaComponent,
+    ChartComponent,
+    UsersComponent,
+    CreateUserComponent,
   ],
   imports: [
     CommonModule,
@@ -28,7 +39,10 @@ import { CalculatorComponent } from './calculator/calculator.component';
     NgxDatatableModule,
     QuillModule.forRoot(),
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    OrganizationChartModule,
+    ToastModule,
+    PanelModule,
   ]
 })
 export class ExercisesModule { }
