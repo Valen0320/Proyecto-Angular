@@ -10,20 +10,9 @@ import { UserService } from 'app/shared/services/user.service';
 
 export class PageComponent implements OnInit {
 
-  constructor(private userService:UserService){}
-  users:any[];
+  constructor() { }
 
   ngOnInit(): void {
-    this.userService.getUsers().subscribe(
-      response =>{
-        if(response.code === 200){
-          this.users = response.data;
-          console.log(this.users);
-        }
-      },
-      error =>{
-        console.log("Error en el servidor");
-      }
-    )
+    
   }
 }

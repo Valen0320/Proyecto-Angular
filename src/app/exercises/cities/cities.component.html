@@ -1,0 +1,27 @@
+<h3 style="text-align: center;">LISTA DE CIUDADES</h3>
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Latitud</th>
+        <th>Longitud</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let city of cities">
+        <td>{{city.idlocal}}</td>
+        <td>{{city.name}}</td>  
+        <td>{{city.latitude}}</td>  
+        <td>{{city.longitude}}</td>   
+        <td> <i class="ft-delete text-primary cursor-pointer mr-2" (click)="eliminar()"></i>  </td>
+      </tr>
+    </tbody>
+</table>
+
+<a>
+    <button class="my-btn" (click)="crear()">Agregar Ciudad</button>
+</a>

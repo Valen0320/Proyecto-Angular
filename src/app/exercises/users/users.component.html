@@ -1,4 +1,34 @@
 <h3 style="text-align: center;">LISTA DE USUARIOS</h3>
-<a id="exercises/create-user">
-    <button class="my-btn" onclick="location.href='exercises/create-user'">Crear Usuario</button>
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Rol</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.userId}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>
+          <span class="badge badge-pill"
+            [ngClass]="{'bg-light-primary': user.role == 'Administrador', 'bg-light-success':user.role == 'Coordinador', 'bg-light-danger':user.role == 'Profesional' , 'bg-light-warning':user.role == 'Implementador' , 'bg-light-info':user.role == 'Applied'}">
+            {{ user.role }}
+          </span>
+        </td>        
+        <td>  <i class="ft-edit text-primary cursor-pointer" (click)="editar()">&nbsp;&nbsp;&nbsp;</i>  
+              <i class="ft-delete text-primary cursor-pointer mr-2" (click)="eliminar()"></i>  </td>
+      </tr>
+    </tbody>
+</table>
+
+<a>
+    <!--<button class="my-btn" onclick="location.href='exercises/create-user'">Crear Usuario</button>-->
+    <button class="my-btn" (click)="crear()">Crear Usuario</button>
 </a>

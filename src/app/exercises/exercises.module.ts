@@ -18,6 +18,10 @@ import {ToastModule} from 'primeng/toast';
 import {PanelModule} from 'primeng/panel';
 import { UsersComponent } from './users/users.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { TablesComponent } from './tables/tables.component';
+import { CitiesComponent } from './cities/cities.component';
+import { AristasComponent } from './aristas/aristas.component';
+import { DijkstraComponent } from './dijkstra/dijkstra.component';
 
 
 @NgModule({
@@ -30,6 +34,10 @@ import { CreateUserComponent } from './create-user/create-user.component';
     ChartComponent,
     UsersComponent,
     CreateUserComponent,
+    TablesComponent,
+    CitiesComponent,
+    AristasComponent,
+    DijkstraComponent
   ],
   imports: [
     CommonModule,

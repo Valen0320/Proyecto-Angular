@@ -6,18 +6,28 @@ export const ROUTES: RouteInfo[] = [
     path: '/page', title: 'Page', icon: 'ft-home', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
   },
   {
-    path: '/exercises/users', title: 'Users', icon: 'ft-home', class: 'has-sub', badge: '1', badgeClass: 'badge badge-pill badge-danger float-right mr-1 mt-1', isExternalLink: false, 
-    submenu: [
-      {
-        path: '/exercises/create-user', title: 'Create Users', icon: 'ft-home', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
-      }
-    ]
+    path: '/exercises/users', title: 'Users', icon: 'ft-home', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+  },
+  {
+    path: '/exercises/create-user', title: 'Create Users', icon: 'ft-home', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+  },
+  {
+    path: '/exercises/cities', title: 'Cities', icon: 'ft-align-left', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+  },
+  {
+    path: '/exercises/aristas', title: 'Aristas', icon: 'ft-align-left', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+  },
+  {
+    path: '/exercises/dijkstra', title: 'Dijkstra', icon: 'ft-align-left', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
   },
   {
     path: '/exercises/calculator', title: 'Calculator', icon: 'ft-smartphone', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
   },
   {
     path: '/exercises/gallery', title: 'Gallery', icon: 'ft-camera', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+  },
+  {
+    path: '/exercises/tables', title: 'Tables', icon: 'ft-grid', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
   },
   {
     path: '/exercises/data-tables', title: 'Data Tables', icon: 'ft-grid', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []

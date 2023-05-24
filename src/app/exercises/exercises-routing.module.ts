@@ -8,6 +8,10 @@ import { OrganigramaComponent } from './organigrama/organigrama.component';
 import { ChartComponent } from './chart/chart.component';
 import { UsersComponent } from './users/users.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { TablesComponent } from './tables/tables.component';
+import { CitiesComponent } from './cities/cities.component';
+import { AristasComponent } from './aristas/aristas.component';
+import { DijkstraComponent } from './dijkstra/dijkstra.component';
 
 const routes: Routes = [
   {
@@ -38,6 +42,42 @@ const routes: Routes = [
     path: '',
     children: [
       {
+        path: 'cities',
+        component: CitiesComponent,
+        data: {
+          title: 'Cities'
+        }
+      }
+    ]
+  },
+  {
+    path: '',
+    children: [
+      {
+        path: 'aristas',
+        component: AristasComponent,
+        data: {
+          title: 'Aristas'
+        }
+      }
+    ]
+  },
+  {
+    path: '',
+    children: [
+      {
+        path: 'dijkstra',
+        component: DijkstraComponent,
+        data: {
+          title: 'Dijkstra'
+        }
+      }
+    ]
+  },
+  {
+    path: '',
+    children: [
+      {
         path: 'calculator',
         component: CalculatorComponent,
         data: {
@@ -54,6 +94,18 @@ const routes: Routes = [
         component: GalleryPageComponent,
         data: {
           title: 'Gallery'
+        }
+      }
+    ]
+  },
+  {
+    path: '',
+    children: [
+      {
+        path: 'tables',
+        component: TablesComponent,
+        data: {
+          title: 'Tables'
         }
       }
     ]
